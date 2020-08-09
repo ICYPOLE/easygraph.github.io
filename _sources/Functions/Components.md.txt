@@ -1,0 +1,66 @@
+ ## Components
+
+Easy Graph can help users check whether the graph (undirected) is connected/biconnected or not. It can also provide with connected/biconnected components.
+
+### Connected Components
+
+Returns whether the graph is connected or not.
+
+```python
+# G: <class 'Graph'>
+is_connected(G)
+```
+
+Returns the number of connected components of graph.
+
+```python
+number_connected_components(G)
+```
+
+Returns the connected components of each node in graph.
+
+```python
+connected_components(G)
+```
+
+Returns the connected component of one node `Jack`.
+
+```python
+connected_component_of_node(G, node='Jack')
+```
+
+
+
+### Biconnected Components
+
+Returns whether the graph is biconnected or not.
+
+```python
+# G: <class 'Graph'>
+is_biconnected(G)
+```
+
+Returns the biconnected components of each node in graph.
+
+```python
+connected_components(G)
+```
+
+Returns a generator of nodes in all biconnected components.
+
+```python
+generator_biconnected_components_nodes(G)
+```
+
+Returns a generator of edges in all biconnected components.
+
+```python
+generator_biconnected_components_edges(G)
+```
+
+Returns a generator of the articulation points.
+
+```python
+generator_articulation_points(G)
+```
+

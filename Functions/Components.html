@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components &#8212; Easy Graph 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="components">
+<h1>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h1>
+<p>Easy Graph can help users check whether the graph (undirected) is connected/biconnected or not. It can also provide with connected/biconnected components.</p>
+<div class="section" id="connected-components">
+<h2>Connected Components<a class="headerlink" href="#connected-components" title="Permalink to this headline">¶</a></h2>
+<p>Returns whether the graph is connected or not.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># G: &lt;class &#39;Graph&#39;&gt;</span>
+<span class="n">is_connected</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the number of connected components of graph.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">number_connected_components</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the connected components of each node in graph.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">connected_components</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the connected component of one node <code class="docutils literal notranslate"><span class="pre">Jack</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">connected_component_of_node</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">node</span><span class="o">=</span><span class="s1">&#39;Jack&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="biconnected-components">
+<h2>Biconnected Components<a class="headerlink" href="#biconnected-components" title="Permalink to this headline">¶</a></h2>
+<p>Returns whether the graph is biconnected or not.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># G: &lt;class &#39;Graph&#39;&gt;</span>
+<span class="n">is_biconnected</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the biconnected components of each node in graph.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">connected_components</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a generator of nodes in all biconnected components.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">generator_biconnected_components_nodes</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a generator of edges in all biconnected components.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">generator_biconnected_components_edges</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a generator of the articulation points.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">generator_articulation_points</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Easy Graph</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Graph Classes.html">Graph Classes</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, lizheng.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/Functions/Components.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
